@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="player player--0 player--active">
+            <div>
+                <h2 class="name" id="name--0">Player 1 💪🏽</h2>
+            </div>
+            <p class="health" id="health--0">10</p>
+            <div>
+                <img src="Image\LHS.jpg" alt="Military" height="100px" width="100px">
+            </div>
+            <div class="current">
+                <p class="current-label">Shots Fired</p>
+                <p class="current-score" id="current--0">0</p>
+            </div>
+        </section>
+        <section class="player player--1">
+            <div>
+                <h2 class="name" id="name--1">Player 2 💪🏽</h2>
+            </div>
+            <p class="health" id="health--1">40</p>
+            <div>
+                <img src="Image\RHS.jpg" alt="Monster" height="100px" width="100px">
+            </div>
+            <div class="current">
+                <p class="current-label">Shots Fired</p>
+                <p class="current-score" id="current--1">0</p>
+            </div>
+        </section>
+        <button class="btn btn--shoot">
+            🔫Shoot</button>
+        <button class="btn btn--reset">Reset</button>
+
+    </main>
+
+    <div class="Score-Board">
+        <div class="playerscore" id="player-score-0">Player 1</div>
+        <div class="playerscore" id="player-win-0">Number of Win</div>
+        <div class="playerscore" id="player-win-score0">0</div>
+        <div class="playerscore" id="player-score-1">Player 2</div>
+        <div class="playerscore" id="player-win-1">Number of Win</div>
+        <div class="playerscore" id="player-win-score1">0</div>
+
+    </div>
+
+    <div class="result">
+        <div class="result-item" id="final-result-item"></div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
